@@ -1,0 +1,121 @@
+/* Utilities */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding-top: 42px;
+  padding-left: 156px;
+  padding-bottom: 86px;
+  padding-right: 140px;
+}
+
+/* top banner styles */
+.top-banner {
+  background-color: #2d25a0;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar-1 a {
+  text-decoration: none;
+  color: white;
+  padding-right: 36px;
+}
+.log-in a {
+  text-decoration: none;
+  color: white;
+}
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e02c6d;
+  height: 44px;
+  width: 123px;
+  margin-right: 21px;
+}
+.top-banner-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 49px;
+}
+.top-banner-image img {
+  width: 556px;
+  height: 438px;
+}
+/* animation */
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.top-banner:hover .top-banner-image img {
+  animation: scaling 3s ease infinite alternate;
+  animation-play-state: running;
+}
+.main-title {
+  font-size: 64px;
+  color: white;
+}
+.watch-live {
+  background-color: #e02c6d;
+  width: 168px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.fa-arrow-right {
+  margin-left: 10px;
+}
+
+/* All players */
+.all-players {
+  background-color: lightgray;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px !important;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.player {
+  background-color: white;
+  width: 330px;
+  height: 474px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player img {
+  width: 300px;
+  height: 256px;
+  padding-top: 10px;
+}
+.player h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 10px 0;
+}
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+  width: 300px;
+  height: 256px;
+}
